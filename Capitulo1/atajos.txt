@@ -1,0 +1,2 @@
+comillas simples alt + 96
+comentar por bloques de codigo ctrl + }
