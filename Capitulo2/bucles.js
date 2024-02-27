@@ -60,17 +60,17 @@ let numero = 10;
 //-------------------------------------------------------------------------------------------------
 
 //Sentencia label: Permite asociar un bucle a un nombre para poder finalizarlo en el momento deseado
-let array1 = ["maria", "josefa", "roberta"];
-let array2 = ["pedro", "marcelo", array1, "josefina"];
+// let array1 = ["maria", "josefa", "roberta"];
+// let array2 = ["pedro", "marcelo", array1, "josefina"];
 
-primerFor:
-for(let array in array2) {
-    if(array == 2) {
-        for(let array of array1) {
-            document.write(array + "<br>")
-            break primerFor;
-        } 
-    } else {
-        document.write(array2[array] + "<br>")
-    }
-}
+// primerFor:
+// for(let array in array2) {
+//     if(array == 2) {
+//         for(let array of array1) {
+//             document.write(array + "<br>")
+//             break primerFor;
+//         } 
+//     } else {
+//         document.write(array2[array] + "<br>")
+//     }
+// }
