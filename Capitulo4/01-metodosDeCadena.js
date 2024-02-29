@@ -53,15 +53,6 @@
 
 //------------------------------------------------------------------------------------------------------------------------- */ */
 
-//lastIndexOf(): Devuelve el ultimo indice del primer caracter de la cadena, si no existe devuelve -1
-
-// let cadena = "sigo a dalto en instagram pi";
-// let cadena2 = ""
-// let resultado = cadena.lastIndexOf("i");  //En este caso el resultado es 27, ya que la cadena "i" se puede encontrar a partir de la posicion 27 (lastIndexOf()) cuenta de atras para delante
-// document.write(resultado);
-
-//------------------------------------------------------------------------------------------------------------------------- */ */
-
 //padStart() [propuesta estandar]: Rellena la cadena al principio con los caracteres deseados
 
 // let cadena1 = "abc";
