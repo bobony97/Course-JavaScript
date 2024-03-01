@@ -41,10 +41,55 @@
 
 //---------------------------------------------------------------------------------------------------------------
 
-//ATRIBUTO STYLE (utilizacion de las palabras con camelCase)
+// (utilizacion de las palabras con camelCase)
 // const titulo = document.querySelector(".titulo");
 // titulo.style.color = "#321";   //Cambiamos el color de las letras
 // titulo.style.backgroundColor = "#123"; //Cambia el color del fondo
+
+//---------------------------------------------------------------------------------------------------------------
+
+//CLASES, CLASSLIST Y METODOS DE CLASSLIST
+//add(): Añade una clase
+//remove(): Remueve una clase
+//item(): Devuelve la clase del indice especificado
+//contains(): Verifica si ese elemento contiene o no la clase especificada 
+//replace(): Reemplaza una clase por otra
+//toggle(): si no tiene la clase especificada, la agrega, si ya la tiene la elimina 
+
+//---------------------------------------------------------------------------------------------------------------
+
+//OBTENCION Y MODIFICACION DE ELEMENTOS
+//const titulo = document.querySelector(".titulo");
+//let resultado = titulo.textContent;  //Devuelve el texto de cualquier nodo (solo texto)
+// let resultado = titulo.innerHTML;  //Devuelve todo el contenido html (excepto las etiquetas)
+// let resultado = titulo.outerHTML;  //Devuelve todo el contenido html (incluyendo el de las etiquetas)
+
+//---------------------------------------------------------------------------------------------------------------
+
+//CREACION DE ELEMENTOS
+// const contenedor = document.querySelector(".contenedor");
+// const item = document.createElement("LI");   //createElement solo reconoce a los elementos en mayusculas
+// const textDelItem = document.createTextNode("Este es un item de la lista");  //Crea un texto
+// item.appendChild(textDelItem); //Añade el texto como un hijo a la etiqueta "LI" convirtiendo a la constante "textDelItem" en un hijo de la constante "item"
+// console.log(item)
+// contenedor.appendChild(item); //Ponemos el item con el texto dentro de la etiqueta div en el html
+//SI TUVIERAMOS QUE AGREGAR MUCHOS ELEMENTOS
+// const contenedor = document.querySelector(".contenedor");  //Contenedor div en el html
+// const fragmento = document.createDocumentFragment();   //Creamos el fragment para alamcenar nodos y evitar el repintado de los objetos
+
+// //El bucle va a crear 20 etiquetas "LI", y almacenar texto dentro de estas etiquetas para enviarlas al fragment y luego imprimirlas en pantalla mas rapido y evitar el consumo excesivo de recursos
+// for(let i = 0; i < 20; i++) {
+//     const item = document.createElement("LI");  //Creamos la etiqueta "LI"
+//     item.innerText = "Este es un elemento de la lista";  //Acoplamos el texto a la etiqueta
+//     fragmento.appendChild(item);   //Almacenamos todo esto en el fragment
+// }
+// contenedor.appendChild(fragmento); //Y finalmente lo imprimimos en pantalla
+
+//---------------------------------------------------------------------------------------------------------------
+
+//OBTENCION Y MODIFICACION DE CHILDs
+
+
 
 
 
