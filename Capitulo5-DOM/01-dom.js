@@ -88,6 +88,53 @@
 //---------------------------------------------------------------------------------------------------------------
 
 //OBTENCION Y MODIFICACION DE CHILDs
+//firstChild = Obtiene el primer hijo (es necesario que no haya espacios entre las etiquetas para poder obtener el valor)
+//lastChild = Obtiene el ultimo hijo (es necesario que no haya espacios entre las etiquetas para poder obtener el valor)
+//firstElementChild = Obtenemos el primer elemento hijo (no es necesario que las etiquetas esten pegadas)
+//lastElementChild = Obtenemos el ultimo elemento hijo (no es necesario que las etiquetas esten pegadas)
+//childNodes = devuelve todos los nodos hijos (no es un array, pero se puede recorrer con un forEach)
+//children = Devuelve solamente las etiquetas html, no el contenido
+// const contenedor = document.querySelector(".contenedor");
+// const primerHijo = contenedor.children;
+// console.log(primerHijo);
+
+//---------------------------------------------------------------------------------------------------------------
+
+//METODOS DE CHILDS (HIJOS)
+//replaceChild() = Reemplaza un hijo por otro
+//removeChild() = Remueve un hijo de un elemento padre 
+//hasChildNodes() = Verifica que un elemento tenga hijos
+// const contenedor = document.querySelector(".contenedor");
+// const parrafo = document.createElement("P").innerHTML = "Parrafo";
+// const h2_nuevo = document.createElement("H2");
+// h2_nuevo.innerHTML = "Titulo"
+// const h2_antiguo = document.querySelector(".h2")
+// contenedor.replaceChild(h2_nuevo, h2_antiguo);  //Este metodo espera 2 argumentos, el primero es el "hijo actual" y el segundo argumento es el "hijo a reemplazar"
+// contenedor.removeChild(h2_nuevo);
+
+//---------------------------------------------------------------------------------------------------------------
+
+//PROPIEDADES DE LOS PARENTS (padres)
+//parentElement = Selecciona una etiqueta html padre
+//parentNode = Selecciona el padre de un elemento, busca un nodo padre
+// const contenedor = document.querySelector(".contenedor");
+// const parrafo = document.createElement("P").innerHTML = "Parrafo";
+// const h2_nuevo = document.createElement("H2");
+// const h2_antiguo = document.querySelector(".h2");
+// console.log(contenedor.parentElement)
+
+//---------------------------------------------------------------------------------------------------------------
+
+//PROPIEDADES DE LOS SIBLINGS (HERMANOS):Los elemento hermanos son los que estan en la misma linea o jerarquia
+//nextSibling = Devuelve el siguiente nodo en la lista
+//previusSibling = Devuelve el nodo anterior en la lista
+//nextElementSibling = Devuelve el elemento siguiente
+//previusNextSibling = Muestra el elemento anterior
+// const contenedor = document.querySelector(".contenedor");
+// const parrafo = document.createElement("P").innerHTML = "Parrafo";
+// const h2_nuevo = document.createElement("H2");
+// const h2_antiguo = document.querySelector(".h2");
+// console.log(h2_antiguo.nextSibling)
 
 
 
